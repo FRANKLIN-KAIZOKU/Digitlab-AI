@@ -62,23 +62,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // DigitLab AI custom colors
-        plum: "#190019",
-        deepPurple: "#2B124C",
-        purple: "#522B5B",
-        mauve: "#854F6C",
-        dustyRose: "#DFB6B2",
-        warmCream: "#FBE4D8",
-        emerald: "#1A4D3E",
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        sans: ["Inter", "Geist", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono", "Fira Code", "monospace"],
       },
       keyframes: {
         "accordion-down": {
@@ -97,40 +85,10 @@ export default {
             height: "0",
           },
         },
-        "fade-in": {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
-        },
-        "slide-up": {
-          "0%": { opacity: "0", transform: "translateY(40px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        "slide-left": {
-          "0%": { opacity: "0", transform: "translateX(-40px)" },
-          "100%": { opacity: "1", transform: "translateX(0)" },
-        },
-        "scale-in": {
-          "0%": { opacity: "0", transform: "scale(0.95)" },
-          "100%": { opacity: "1", transform: "scale(1)" },
-        },
-        "pulse-soft": {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.7" },
-        },
-        "glow-soft": {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(251, 228, 216, 0.1)" },
-          "50%": { boxShadow: "0 0 40px rgba(251, 228, 216, 0.2)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.6s ease-out forwards",
-        "slide-up": "slide-up 0.8s ease-out forwards",
-        "slide-left": "slide-left 0.8s ease-out forwards",
-        "scale-in": "scale-in 0.6s ease-out forwards",
-        "pulse-soft": "pulse-soft 3s ease-in-out infinite",
-        "glow-soft": "glow-soft 4s ease-in-out infinite",
       },
     },
   },
