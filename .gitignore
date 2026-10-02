@@ -29,3 +29,11 @@ dist-ssr
 /playwright/.cache/
 .last-run.json
 .dyad/
+
+# Python virtual environment
+backend/.venv/
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
