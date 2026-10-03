@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+tensorflow==2.18.1
+pillow
+numpy
+scikit-learn
+matplotlib
+python-multipart
+httpx
