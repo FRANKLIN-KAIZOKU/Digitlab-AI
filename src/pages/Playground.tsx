@@ -2,7 +2,7 @@ import SiteHeader from "@/components/SiteHeader";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://digitlab-ai-1qlc.onrender.com";
 
 type PredictionResponse = {
   success: boolean;
