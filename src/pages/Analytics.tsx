@@ -1,3 +1,4 @@
+import SiteHeader from "@/components/SiteHeader";
 import {
   Bar,
   BarChart,
@@ -54,52 +55,8 @@ const tooltipStyle = {
 export default function Analytics() {
   return (
     <main style={pageStyle}>
-      {/* HEADER */}
-      <header
-        style={{
-          borderBottom: "1px solid rgba(223,182,178,0.18)",
-          padding: "22px 5vw",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 24,
-        }}
-      >
-        <a
-          href="/"
-          style={{
-            color: "#FBE4D8",
-            textDecoration: "none",
-            fontSize: 15,
-            fontWeight: 700,
-            letterSpacing: "0.16em",
-          }}
-        >
-          DIGITLAB AI
-        </a>
-
-        <nav
-          style={{
-            display: "flex",
-            gap: 24,
-            fontSize: 12,
-            letterSpacing: "0.12em",
-            textTransform: "uppercase",
-          }}
-        >
-          <a href="/playground" style={{ color: "#DFB6B2", textDecoration: "none" }}>
-            Playground
-          </a>
-
-          <a href="/model-lab" style={{ color: "#DFB6B2", textDecoration: "none" }}>
-            Model Lab
-          </a>
-
-          <a href="/analytics" style={{ color: "#FBE4D8", textDecoration: "none" }}>
-            Analytics
-          </a>
-        </nav>
-      </header>
+      
+      <SiteHeader />
 
       {/* HERO */}
       <section

@@ -42,6 +42,7 @@ const Index = () => {
       <section className="relative px-8 pb-20 pt-20 md:px-12 md:pt-28 lg:px-16 lg:pt-32">
         {/* atmospheric shapes */}
         <div className="pointer-events-none absolute -right-40 top-10 h-[600px] w-[600px] rounded-full bg-[#522B5B]/20 blur-[140px]" />
+
         <div className="pointer-events-none absolute right-[18%] top-[38%] h-[260px] w-[260px] rounded-full bg-[#854F6C]/10 blur-[100px]" />
 
         <div className="relative z-10 max-w-[1250px]">
@@ -50,7 +51,14 @@ const Index = () => {
           </p>
 
           <h1
-            className="max-w-[1200px] text-[clamp(56px,8.5vw,138px)] font-extrabold uppercase leading-[0.84] tracking-[-0.065em]"
+            className="
+              max-w-[1200px]
+              text-[clamp(56px,8.5vw,138px)]
+              font-extrabold
+              uppercase
+              leading-[0.84]
+              tracking-[-0.065em]
+            "
           >
             SEE HOW A
             <br />
@@ -62,9 +70,30 @@ const Index = () => {
           <div className="mt-12 flex flex-col gap-8 md:flex-row md:items-center">
             <Link
               to="/playground"
-              className="group inline-flex h-16 w-full max-w-[380px] items-center justify-between border border-[#DFB6B2]/60 px-7 text-[10px] font-semibold uppercase tracking-[0.25em] transition duration-300 hover:bg-[#DFB6B2] hover:text-[#190019] md:w-[380px]"
+              className="
+                group
+                inline-flex
+                h-16
+                w-full
+                max-w-[380px]
+                items-center
+                justify-between
+                border
+                border-[#DFB6B2]/60
+                px-7
+                text-[10px]
+                font-semibold
+                uppercase
+                tracking-[0.25em]
+                transition
+                duration-300
+                hover:bg-[#DFB6B2]
+                hover:text-[#190019]
+                md:w-[380px]
+              "
             >
               <span>Open the Playground</span>
+
               <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
@@ -85,6 +114,7 @@ const Index = () => {
               <p className="text-[9px] uppercase tracking-[0.25em] text-[#854F6C]">
                 Model
               </p>
+
               <p className="mt-2 text-sm font-semibold uppercase tracking-[0.08em]">
                 Convolutional CNN
               </p>
@@ -94,6 +124,7 @@ const Index = () => {
               <p className="text-[9px] uppercase tracking-[0.25em] text-[#854F6C]">
                 Dataset
               </p>
+
               <p className="mt-2 text-sm font-semibold uppercase tracking-[0.08em]">
                 MNIST / 10 Classes
               </p>
@@ -103,6 +134,7 @@ const Index = () => {
               <p className="text-[9px] uppercase tracking-[0.25em] text-[#854F6C]">
                 Current Model
               </p>
+
               <p className="mt-2 text-sm font-semibold uppercase tracking-[0.08em]">
                 V4 / 98.07%
               </p>
@@ -112,6 +144,7 @@ const Index = () => {
               <p className="text-[9px] uppercase tracking-[0.25em] text-[#854F6C]">
                 Live Inference
               </p>
+
               <p className="mt-2 text-sm font-semibold uppercase tracking-[0.08em]">
                 Available
               </p>
@@ -122,7 +155,7 @@ const Index = () => {
 
       {/* FOOTER DETAIL */}
       <div className="pointer-events-none absolute bottom-5 right-8 hidden text-[9px] uppercase tracking-[0.25em] text-[#522B5B] md:block">
-        INSPIRE LEAP / AI SYSTEMS / 2026
+        FRANKLIN K / AI SYSTEMS / 2026
       </div>
     </main>
   );

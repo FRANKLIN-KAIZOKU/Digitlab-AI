@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SiteHeader from "@/components/SiteHeader";
 
 const models = [
   {
@@ -38,26 +39,8 @@ const models = [
 export default function ModelLab() {
   return (
     <main className="min-h-screen bg-[#190019] text-[#FBE4D8]">
-      <nav className="flex items-center justify-between border-b border-[#522B5B] px-6 py-5 md:px-10">
-        <Link
-          to="/"
-          className="text-sm font-semibold tracking-[0.25em]"
-        >
-          DIGITLAB AI
-        </Link>
-
-        <div className="flex gap-6 text-xs uppercase tracking-[0.18em] text-[#DFB6B2]">
-          <Link to="/playground" className="hover:text-[#FBE4D8]">
-            Playground
-          </Link>
-          <Link to="/model-lab" className="text-[#FBE4D8]">
-            Model Lab
-          </Link>
-          <Link to="/analytics" className="hover:text-[#FBE4D8]">
-            Analytics
-          </Link>
-        </div>
-      </nav>
+      
+      <SiteHeader />
 
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
         <div className="max-w-4xl">

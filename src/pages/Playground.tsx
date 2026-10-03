@@ -1,3 +1,4 @@
+import SiteHeader from "@/components/SiteHeader";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -266,28 +267,8 @@ export default function Playground() {
 
   return (
     <main className="min-h-screen bg-[#190019] text-[#FBE4D8]">
-      {/* NAV */}
-      <nav className="flex items-center justify-between border-b border-[#854F6C]/30 px-8 py-6">
-        <Link
-          to="/"
-          className="text-sm font-semibold tracking-[0.25em]"
-        >
-          DIGITLAB AI
-        </Link>
-
-        <div className="flex gap-8 text-xs uppercase tracking-[0.18em] text-[#DFB6B2]">
-          <Link
-            to="/"
-            className="transition hover:text-[#FBE4D8]"
-          >
-            Home
-          </Link>
-
-          <span className="text-[#FBE4D8]">
-            Playground
-          </span>
-        </div>
-      </nav>
+      
+      <SiteHeader />
 
       {/* HEADER */}
       <section className="px-8 pb-10 pt-16 md:px-16">
